@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { X, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface Message {
   type: 'user' | 'bot';
@@ -17,6 +18,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
     { type: 'bot', content: 'Bonjour ! Je suis votre assistant virtuel Cornerstone. Comment puis-je vous aider ?' }
   ]);
   const [input, setInput] = useState('');
+  const isMobile = useIsMobile();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +39,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   };
 
   return (
-    <div className="fixed bottom-20 right-4 w-96 h-[500px] bg-white rounded-lg shadow-xl flex flex-col border border-gray-200">
+    <div className={`fixed ${isMobile ? 'inset-0' : 'bottom-20 right-4 w-96 h-[500px]'} bg-white rounded-lg shadow-xl flex flex-col border border-gray-200 z-50`}>
       <div className="flex items-center justify-between p-4 border-b bg-brick-600 text-white rounded-t-lg">
         <h3 className="font-semibold">Assistant Cornerstone</h3>
         <Button variant="ghost" size="icon" onClick={onClose} className="text-white hover:text-white hover:bg-brick-700">

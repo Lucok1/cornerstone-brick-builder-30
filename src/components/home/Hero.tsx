@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
+import QuoteRequestButton from './QuoteRequestButton';
 
 const Hero = () => {
   return (
@@ -30,11 +31,7 @@ const Hero = () => {
                   Voir nos produits <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-brick-600 text-brick-600 hover:bg-brick-50">
-                <Link to="/order">
-                  Commander maintenant
-                </Link>
-              </Button>
+              <QuoteRequestButton />
             </div>
           </div>
           
