@@ -221,7 +221,7 @@ const TrackingPage = () => {
                   </div>
                   <h3 className="text-lg font-bold text-earth-900 mb-2">Suivi vidéo</h3>
                   <p className="text-earth-600">
-                    Bientôt disponible: regardez en direct la fabrication de vos briques grâce à nos caméras installées dans l'usine.
+                    Regardez en direct la fabrication de vos briques grâce à nos caméras installées dans l'usine.
                   </p>
                 </div>
               </div>

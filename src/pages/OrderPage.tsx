@@ -72,7 +72,7 @@ const OrderPage = () => {
       city: "",
       country: "Togo",
       product: "",
-      quantity: "1",
+      quantity: 1,
       paymentMethod: "cash",
       additionalInfo: "",
       termsAgreed: false,
