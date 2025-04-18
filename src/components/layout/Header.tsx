@@ -24,12 +24,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-brick-600 rounded flex items-center justify-center">
-              <span className="text-white font-bold text-xl">CB</span>
-            </div>
-            <span className="text-xl font-bold text-earth-900 hidden md:block">
-              Cornerstone<span className="text-brick-600">Briques</span>
-            </span>
+            <img 
+              src="/public/lovable-uploads/afc4c9ed-9d66-4969-854f-42661da3c524.png" 
+              alt="Cornerstone Briques Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,8 +47,8 @@ const Header = () => {
                 <Link to="/products/solid-bricks" className="block px-4 py-2 text-earth-700 hover:bg-earth-50">
                   Briques Pleines
                 </Link>
-                <Link to="/products/heurels" className="block px-4 py-2 text-earth-700 hover:bg-earth-50">
-                  Heurels
+                <Link to="/products/hourdis" className="block px-4 py-2 text-earth-700 hover:bg-earth-50">
+                  Hourdis
                 </Link>
               </div>
             </div>
@@ -100,7 +99,7 @@ const Header = () => {
               <Search size={20} />
             </Link>
             
-            <Link to="/account" className="text-earth-800 hover:text-brick-600">
+            <Link to="/login" className="text-earth-800 hover:text-brick-600">
               <User size={20} />
             </Link>
             
@@ -153,11 +152,11 @@ const Header = () => {
                   Briques Pleines
                 </Link>
                 <Link 
-                  to="/products/heurels" 
+                  to="/products/hourdis" 
                   className="block text-earth-700 hover:text-brick-600"
                   onClick={toggleMenu}
                 >
-                  Heurels
+                  Hourdis
                 </Link>
               </div>
             </div>
