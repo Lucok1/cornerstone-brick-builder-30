@@ -8,22 +8,22 @@ const categories = [
     id: 1,
     name: "Briques Creuses",
     description: "Idéales pour les murs intérieurs et extérieurs",
-    image: "https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?q=80&w=1000",
+    image: "public/lovable-uploads/497c82b0-83b4-4448-babb-a255c0d0b0c5.png",
     link: "/products/hollow-bricks"
   },
   {
     id: 2,
     name: "Briques Pleines",
     description: "Parfaites pour les murs porteurs et les fondations",
-    image: "https://images.unsplash.com/photo-1635424715326-30114d7f1267?q=80&w=1000",
+    image: "public/lovable-uploads/263f9887-f3ce-4c6c-8913-cfc97311c4f6.png",
     link: "/products/solid-bricks"
   },
   {
     id: 3,
-    name: "Heurels",
-    description: "Optimales pour les plafonds et les structures légères",
-    image: "https://images.unsplash.com/photo-1590328890650-7fe374024275?q=80&w=1000",
-    link: "/products/heurels"
+    name: "Hourdis",
+    description: "Optimaux pour les plafonds et les structures légères",
+    image: "public/lovable-uploads/de4514b5-0937-4bfd-9104-6b5b1f98cc38.png",
+    link: "/products/hourdis"
   }
 ];
 

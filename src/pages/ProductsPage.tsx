@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -8,7 +7,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Mock product data
+// Mise à jour des données des produits
 const products = [
   {
     id: 1,
@@ -16,7 +15,7 @@ const products = [
     category: "hollow-bricks",
     dimensions: "10 x 20 x 40 cm",
     price: 500,
-    image: "https://images.unsplash.com/photo-1590328890650-7fe374024275?q=80&w=1000",
+    image: "public/lovable-uploads/5d25668a-cee1-4a17-abf4-9408cc38edc9.png",
     inStock: true
   },
   {
@@ -25,7 +24,7 @@ const products = [
     category: "hollow-bricks",
     dimensions: "15 x 20 x 40 cm",
     price: 600,
-    image: "https://images.unsplash.com/photo-1590328890650-7fe374024275?q=80&w=1000",
+    image: "public/lovable-uploads/e27da53a-dda3-4179-bf81-4780f0039f3d.png",
     inStock: true
   },
   {
@@ -34,35 +33,17 @@ const products = [
     category: "solid-bricks",
     dimensions: "10 x 20 x 40 cm",
     price: 700,
-    image: "https://images.unsplash.com/photo-1635424710928-45ef34c36c9a?q=80&w=1000",
+    image: "public/lovable-uploads/f1fba110-37b4-4261-bc5e-8876b6e01331.png",
     inStock: true
   },
   {
     id: 4,
-    name: "Heurel 20",
-    category: "heurels",
+    name: "Hourdis 20",
+    category: "hourdis",
     dimensions: "20 x 30 x 40 cm",
     price: 800,
-    image: "https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?q=80&w=1000",
+    image: "public/lovable-uploads/263f9887-f3ce-4c6c-8913-cfc97311c4f6.png",
     inStock: false
-  },
-  {
-    id: 5,
-    name: "Brique Creuse 20",
-    category: "hollow-bricks",
-    dimensions: "20 x 20 x 40 cm",
-    price: 650,
-    image: "https://images.unsplash.com/photo-1590328890650-7fe374024275?q=80&w=1000",
-    inStock: true
-  },
-  {
-    id: 6,
-    name: "Brique Pleine Double",
-    category: "solid-bricks",
-    dimensions: "20 x 20 x 40 cm",
-    price: 850,
-    image: "https://images.unsplash.com/photo-1635424715326-30114d7f1267?q=80&w=1000",
-    inStock: true
   }
 ];
 
@@ -117,7 +98,7 @@ const ProductsPage = () => {
                 <button className="flex items-center px-4 py-2 border border-earth-200 rounded-md bg-white">
                   <Filter size={16} className="mr-2" />
                   <span className="mr-2">Filtrer par:</span>
-                  <span className="font-medium">{selectedCategory === 'all' ? 'Tous' : selectedCategory === 'hollow-bricks' ? 'Briques Creuses' : selectedCategory === 'solid-bricks' ? 'Briques Pleines' : 'Heurels'}</span>
+                  <span className="font-medium">{selectedCategory === 'all' ? 'Tous' : selectedCategory === 'hollow-bricks' ? 'Briques Creuses' : selectedCategory === 'solid-bricks' ? 'Briques Pleines' : 'Hourdis'}</span>
                   <ChevronDown size={16} className="ml-2" />
                 </button>
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white z-10 hidden group-hover:block">
@@ -141,10 +122,10 @@ const ProductsPage = () => {
                       Briques Pleines
                     </button>
                     <button 
-                      onClick={() => setSelectedCategory('heurels')}
-                      className={`block px-4 py-2 text-sm text-earth-700 hover:bg-earth-50 w-full text-left ${selectedCategory === 'heurels' ? 'font-medium text-brick-600' : ''}`}
+                      onClick={() => setSelectedCategory('hourdis')}
+                      className={`block px-4 py-2 text-sm text-earth-700 hover:bg-earth-50 w-full text-left ${selectedCategory === 'hourdis' ? 'font-medium text-brick-600' : ''}`}
                     >
-                      Heurels
+                      Hourdis
                     </button>
                   </div>
                 </div>

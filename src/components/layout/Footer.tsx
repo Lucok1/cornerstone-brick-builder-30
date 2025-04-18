@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { 
   Facebook, Twitter, Instagram, Mail, Phone, MapPin, ArrowRight 
@@ -78,19 +77,25 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-brick-500 flex-shrink-0 mt-1" />
                 <span className="text-earth-200">
-                  Zone Industrielle, Lomé, Togo
+                  Akodessewa, Après les rails, non loin de la station d'essence CM, Lomé
                 </span>
               </li>
-              <li className="flex items-center">
-                <Phone size={20} className="mr-2 text-brick-500" />
-                <a href="tel:+22800000000" className="text-earth-200 hover:text-brick-500">
-                  +228 00 00 00 00
-                </a>
+              <li>
+                <div className="flex flex-col space-y-2">
+                  <a href="tel:+22890964993" className="flex items-center text-earth-200 hover:text-brick-500">
+                    <Phone size={20} className="mr-2 text-brick-500" />
+                    (+228) 90 96 49 93
+                  </a>
+                  <a href="tel:+22899870195" className="flex items-center text-earth-200 hover:text-brick-500">
+                    <Phone size={20} className="mr-2 text-brick-500" />
+                    (+228) 99 87 01 95
+                  </a>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-brick-500" />
-                <a href="mailto:info@cornerstonebriques.com" className="text-earth-200 hover:text-brick-500">
-                  info@cornerstonebriques.com
+                <a href="mailto:contact@cornerstonebriques.com" className="text-earth-200 hover:text-brick-500">
+                  contact@cornerstonebriques.com
                 </a>
               </li>
             </ul>
